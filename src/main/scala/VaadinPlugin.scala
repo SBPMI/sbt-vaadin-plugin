@@ -22,7 +22,7 @@ object VaadinPlugin extends Plugin {
     unmanagedClasspath in Vaadin <<= (unmanagedClasspath in Compile).identity,
     autoScalaLibrary := false,
     gwtVersion := "2.3.0",
-    vaadinVersion := "6.6.3",
+    vaadinVersion := "6.8.4",
     libraryDependencies <++= gwtVersion({ gwt_version:String => Seq(
       "com.google.gwt" % "gwt-user" % gwt_version % "provided",
       "com.google.gwt" % "gwt-dev" % gwt_version % "provided",
