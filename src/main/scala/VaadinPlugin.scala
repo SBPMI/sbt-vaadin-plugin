@@ -18,7 +18,7 @@ object VaadinPlugin extends Plugin {
       cp ++ Classpaths.managedJars(Provided, Set("src"), up) },
     unmanagedClasspath in Vaadin <<= (unmanagedClasspath in Compile).identity,
     autoScalaLibrary := false,
-    vaadinVersion := "7.0.1",
+    vaadinVersion := "7.0.2",
     libraryDependencies <++= vaadinVersion({ vaadin_version: String => Seq(
       "com.vaadin" % "vaadin-client-compiler" % vaadin_version % "provided"
     ) }),
